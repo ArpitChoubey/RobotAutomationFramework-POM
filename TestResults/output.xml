@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.4.2 (Python 3.13.5 on win32)" generated="2026-08-01T13:49:36.108828" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="DBTesting" source="C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\TestCases\DBTesting.robot">
+<kw name="Connect To Database" type="SETUP">
+<msg time="2026-08-01T13:49:06.234438" level="FAIL">No keyword with name 'Connect To Database' found.</msg>
+<arg>pymysql</arg>
+<arg>${DBName}</arg>
+<arg>${DBUser}</arg>
+<arg>${DBPass}</arg>
+<arg>${DBHost}</arg>
+<arg>${DBPort}</arg>
+<status status="FAIL" start="2026-08-01T13:49:06.233342" elapsed="0.001215">No keyword with name 'Connect To Database' found.</status>
+</kw>
+<test id="s1-s1-t1" name="Check David record present in Person Table" line="33">
+<status status="FAIL" start="2026-08-01T13:49:06.234828" elapsed="0.000647">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</test>
+<test id="s1-s1-t2" name="Check Jio record Not present in Person Table" line="36">
+<status status="FAIL" start="2026-08-01T13:49:06.235841" elapsed="0.000525">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</test>
+<test id="s1-s1-t3" name="Check Person Table exists in mydb database" line="39">
+<status status="FAIL" start="2026-08-01T13:49:06.236863" elapsed="0.000507">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</test>
+<test id="s1-s1-t4" name="Verify Row Count is Zero" line="42">
+<status status="FAIL" start="2026-08-01T13:49:06.237734" elapsed="0.000435">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</test>
+<test id="s1-s1-t5" name="Verify Row Count is Equal to Some Value" line="45">
+<status status="FAIL" start="2026-08-01T13:49:06.238454" elapsed="0.000468">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</test>
+<test id="s1-s1-t6" name="Verify Row Count is Greater than Some Value" line="48">
+<status status="FAIL" start="2026-08-01T13:49:06.239249" elapsed="0.000512">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</test>
+<test id="s1-s1-t7" name="Verify Row Count is less than Some Value" line="51">
+<status status="FAIL" start="2026-08-01T13:49:06.240069" elapsed="0.000470">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</test>
+<test id="s1-s1-t8" name="Update record in person table" line="54">
+<status status="FAIL" start="2026-08-01T13:49:06.240890" elapsed="0.000527">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</test>
+<test id="s1-s1-t9" name="Retrieve Records from Person Table" line="59">
+<status status="FAIL" start="2026-08-01T13:49:06.241715" elapsed="0.000482">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</test>
+<test id="s1-s1-t10" name="Delete Records from person table" line="63">
+<status status="FAIL" start="2026-08-01T13:49:06.242540" elapsed="0.000433">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+
+Also parent suite teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</test>
+<kw name="Disconnect From Database" type="TEARDOWN">
+<msg time="2026-08-01T13:49:06.244467" level="FAIL">No keyword with name 'Disconnect From Database' found.</msg>
+<status status="FAIL" start="2026-08-01T13:49:06.244394" elapsed="0.000155">No keyword with name 'Disconnect From Database' found.</status>
+</kw>
+<status status="FAIL" start="2026-08-01T13:49:06.211000" elapsed="0.006000">Suite setup failed:
+No keyword with name 'Connect To Database' found.
+
+Also suite teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</suite>
+<suite id="s1-s2" name="HomePageTest" source="C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\TestCases\HomePageTest.robot">
+<test id="s1-s2-t1" name="Scenario 1 - Verify Home Page" line="10">
+<kw name="Open My Browser" owner="HomePageKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-08-01T13:49:07.012764" level="INFO">Opening browser 'Chrome' to base url 'https://www.spartoo.eu/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-08-01T13:49:07.012243" elapsed="11.191738"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-08-01T13:49:18.204624" elapsed="1.654759"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2026-08-01T13:49:07.010886" elapsed="12.848823"/>
+</kw>
+<kw name="Verify Home Page" owner="HomePageKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-08-01T13:49:19.862001" level="FAIL">Variable '${txt_SearchPlaceholder}' not found.</msg>
+<arg>${txt_SearchPlaceholder}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-08-01T13:49:19.860828" elapsed="0.001298">Variable '${txt_SearchPlaceholder}' not found.</status>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${txt_SearchPlaceholder}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-08-01T13:49:19.862655" elapsed="0.000182"/>
+</kw>
+<status status="FAIL" start="2026-08-01T13:49:19.860201" elapsed="0.003021">Variable '${txt_SearchPlaceholder}' not found.</status>
+</kw>
+<kw name="Close My Browser" owner="HomePageKeywords">
+<status status="NOT RUN" start="2026-08-01T13:49:19.863672" elapsed="0.000163"/>
+</kw>
+<status status="FAIL" start="2026-08-01T13:49:07.009810" elapsed="12.854422">Variable '${txt_SearchPlaceholder}' not found.</status>
+</test>
+<test id="s1-s2-t2" name="Scenario 2 - Search Shoes" line="19">
+<kw name="Open My Browser" owner="HomePageKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-08-01T13:49:19.868117" level="INFO">Opening browser 'Chrome' to base url 'https://www.spartoo.eu/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-08-01T13:49:19.867622" elapsed="3.289878"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-08-01T13:49:23.158014" elapsed="0.080028"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2026-08-01T13:49:19.866451" elapsed="3.371807"/>
+</kw>
+<kw name="Search Product" owner="HomePageKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-08-01T13:49:23.240627" level="FAIL">Variable '${txt_Search}' not found.</msg>
+<arg>${txt_Search}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-08-01T13:49:23.239222" elapsed="0.001578">Variable '${txt_Search}' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${txt_Search}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-08-01T13:49:23.242912" elapsed="0.000262"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${txt_Search}</arg>
+<arg>${Product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-08-01T13:49:23.243558" elapsed="0.000200"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<arg>${txt_Search}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" start="2026-08-01T13:49:23.244782" elapsed="0.005068"/>
+</kw>
+<arg>Nike Shoes</arg>
+<status status="FAIL" start="2026-08-01T13:49:23.238608" elapsed="0.011505">Variable '${txt_Search}' not found.</status>
+</kw>
+<kw name="Close My Browser" owner="HomePageKeywords">
+<status status="NOT RUN" start="2026-08-01T13:49:23.250372" elapsed="0.000055"/>
+</kw>
+<status status="FAIL" start="2026-08-01T13:49:19.864878" elapsed="3.385782">Variable '${txt_Search}' not found.</status>
+</test>
+<test id="s1-s2-t3" name="Scenario 3 - Navigate To Login Page" line="28">
+<kw name="Open My Browser" owner="HomePageKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-08-01T13:49:23.253954" level="INFO">Opening browser 'Chrome' to base url 'https://www.spartoo.eu/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-08-01T13:49:23.252649" elapsed="2.976353"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-08-01T13:49:26.229446" elapsed="0.047180"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2026-08-01T13:49:23.252078" elapsed="3.025685"/>
+</kw>
+<kw name="Open My Account" owner="HomePageKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-08-01T13:49:26.284740" level="FAIL">Variable '${btn_MyAccount}' not found.</msg>
+<arg>${btn_MyAccount}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-08-01T13:49:26.283427" elapsed="0.001418">Variable '${btn_MyAccount}' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${btn_MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-08-01T13:49:26.285074" elapsed="0.000049"/>
+</kw>
+<status status="FAIL" start="2026-08-01T13:49:26.281174" elapsed="0.004096">Variable '${btn_MyAccount}' not found.</status>
+</kw>
+<kw name="Close My Browser" owner="HomePageKeywords">
+<status status="NOT RUN" start="2026-08-01T13:49:26.285495" elapsed="0.000054"/>
+</kw>
+<status status="FAIL" start="2026-08-01T13:49:23.251077" elapsed="3.034688">Variable '${btn_MyAccount}' not found.</status>
+</test>
+<status status="FAIL" start="2026-08-01T13:49:06.198900" elapsed="20.089534"/>
+</suite>
+<suite id="s1-s3" name="LoginTest" source="C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\TestCases\LoginTest.robot">
+<test id="s1-s3-t1" name="Spartoo Login Test" line="14">
+<kw name="Open My Browser" owner="LoginKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-08-01T13:49:07.737071" level="INFO">Opening browser 'Chrome' to base url 'https://www.spartoo.eu/'.</msg>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-08-01T13:49:07.736721" elapsed="11.416461"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-08-01T13:49:19.154016" elapsed="0.058459"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-08-01T13:49:19.212735" elapsed="0.000441"/>
+</kw>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2026-08-01T13:49:07.735849" elapsed="11.477494"/>
+</kw>
+<kw name="Click My Account" owner="LoginKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-08-01T13:49:19.214965" level="FAIL">Variable '${btn_myAccount}' not found.</msg>
+<arg>${btn_myAccount}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-08-01T13:49:19.214188" elapsed="0.000997">Variable '${btn_myAccount}' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${btn_myAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-08-01T13:49:19.215533" elapsed="0.000086"/>
+</kw>
+<status status="FAIL" start="2026-08-01T13:49:19.213720" elapsed="0.002117">Variable '${btn_myAccount}' not found.</status>
+</kw>
+<kw name="Verify Login Page" owner="LoginKeywords">
+<status status="NOT RUN" start="2026-08-01T13:49:19.216141" elapsed="0.000062"/>
+</kw>
+<kw name="Enter Email" owner="LoginKeywords">
+<arg>${Email}</arg>
+<status status="NOT RUN" start="2026-08-01T13:49:19.216446" elapsed="0.000068"/>
+</kw>
+<kw name="Enter Password" owner="LoginKeywords">
+<arg>${Password}</arg>
+<status status="NOT RUN" start="2026-08-01T13:49:19.216763" elapsed="0.000079"/>
+</kw>
+<kw name="Click Sign In" owner="LoginKeywords">
+<status status="NOT RUN" start="2026-08-01T13:49:19.217101" elapsed="0.000073"/>
+</kw>
+<kw name="Close My Browser" owner="LoginKeywords">
+<status status="NOT RUN" start="2026-08-01T13:49:19.217400" elapsed="0.000062"/>
+</kw>
+<status status="FAIL" start="2026-08-01T13:49:07.735028" elapsed="11.486223">Variable '${btn_myAccount}' not found.</status>
+</test>
+<status status="FAIL" start="2026-08-01T13:49:07.283637" elapsed="11.940803"/>
+</suite>
+<status status="FAIL" start="2026-08-01T13:49:06.082000" elapsed="20.207000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="14" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="14" skip="0">Suites</stat>
+<stat name="DBTesting" id="s1-s1" pass="0" fail="10" skip="0">Suites.DBTesting</stat>
+<stat name="HomePageTest" id="s1-s2" pass="0" fail="3" skip="0">Suites.HomePageTest</stat>
+<stat name="LoginTest" id="s1-s3" pass="0" fail="1" skip="0">Suites.LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-08-01T13:49:06.214820" level="ERROR">Error in file 'C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\TestCases\DBTesting.robot' on line 4: Importing library 'DatabaseLibrary' failed: ModuleNotFoundError: No module named 'DatabaseLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\hi\AppData\Local\Programs\Python\Python313\Scripts\robot.exe
+  C:\Users\hi\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\hi\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\hi\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\hi\AppData\Local\Programs\Python\Python313
+  C:\Users\hi\AppData\Local\Programs\Python\Python313\Lib\site-packages</msg>
+<msg time="2026-08-01T13:49:07.008698" level="ERROR">Error in file 'C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\Resources\HomePageKeywords.robot' on line 3: Variable file '..\PageObjects\HomePageLocators.py' does not exist.</msg>
+<msg time="2026-08-01T13:49:07.734314" level="ERROR">Error in file 'C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\Resources\LoginKeywords.robot' on line 3: Variable file '..\PageObjects\Locators.py' does not exist.</msg>
+</errors>
+</robot>

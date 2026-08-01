@@ -1,0 +1,20 @@
+--name Suites
+--suite Suites.DBTesting
+--variable CALLER_ID:497c124d9a474d138191c761f9baf9bd
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:0
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:2
+--variable PABOTQUEUEINDEX:0
+--variable PABOTLASTLEVEL:Suites.DBTesting
+--outputdir TestResults\pabot_results\0
+--output output.xml
+--log NONE
+--report NONE
+--xunit NONE
+--consolecolors off
+--consolemarkers off
+TestCases\DBTesting.robot
+TestCases\HeadlessTesting.robot
+TestCases\HomePageTest.robot
+TestCases\LoginTest.robot

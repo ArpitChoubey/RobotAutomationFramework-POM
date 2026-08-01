@@ -1,0 +1,17 @@
+==============================================================================
+Suites
+==============================================================================
+Suites.HeadlessTesting
+==============================================================================
+LoginTest                                                             | FAIL |
+No keyword with name 'Close my browsers' found. Did you mean:
+    LoginKeywords.Close My Browser
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+Suites.HeadlessTesting                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\TestResults\pabot_results\1\output.xml

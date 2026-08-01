@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.5 on win32)" generated="2026-08-01T14:09:30.942008" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="LoginTest" source="C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\TestCases\LoginTest.robot">
+<test id="s1-s1-t1" name="Spartoo Login Test" line="14">
+<kw name="Open My Browser" owner="LoginKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-08-01T14:09:32.384674" level="INFO">Opening browser 'Chrome' to base url 'https://www.spartoo.eu/'.</msg>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-08-01T14:09:32.384286" elapsed="4.551850"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-08-01T14:09:36.937027" elapsed="0.335852"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-08-01T14:09:37.273172" elapsed="0.000377"/>
+</kw>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2026-08-01T14:09:32.382875" elapsed="4.890826"/>
+</kw>
+<kw name="Click My Account" owner="LoginKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-08-01T14:09:37.275607" level="FAIL">Variable '${btn_myAccount}' not found.</msg>
+<arg>${btn_myAccount}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-08-01T14:09:37.274325" elapsed="0.001407">Variable '${btn_myAccount}' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${btn_myAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-08-01T14:09:37.276010" elapsed="0.000057"/>
+</kw>
+<status status="FAIL" start="2026-08-01T14:09:37.273950" elapsed="0.003768">Variable '${btn_myAccount}' not found.</status>
+</kw>
+<kw name="Verify Login Page" owner="LoginKeywords">
+<status status="NOT RUN" start="2026-08-01T14:09:37.280223" elapsed="0.000119"/>
+</kw>
+<kw name="Enter Email" owner="LoginKeywords">
+<arg>${Email}</arg>
+<status status="NOT RUN" start="2026-08-01T14:09:37.282345" elapsed="0.000148"/>
+</kw>
+<kw name="Enter Password" owner="LoginKeywords">
+<arg>${Password}</arg>
+<status status="NOT RUN" start="2026-08-01T14:09:37.283817" elapsed="0.000137"/>
+</kw>
+<kw name="Click Sign In" owner="LoginKeywords">
+<status status="NOT RUN" start="2026-08-01T14:09:37.284290" elapsed="0.002040"/>
+</kw>
+<kw name="Close My Browser" owner="LoginKeywords">
+<status status="NOT RUN" start="2026-08-01T14:09:37.286737" elapsed="0.000076"/>
+</kw>
+<status status="FAIL" start="2026-08-01T14:09:32.381795" elapsed="4.905352">Variable '${btn_myAccount}' not found.</status>
+</test>
+<status status="FAIL" start="2026-08-01T14:09:31.072726" elapsed="6.216468"/>
+</suite>
+<status status="FAIL" start="2026-08-01T14:09:30.951012" elapsed="6.340563"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="1" skip="0">Suites</stat>
+<stat name="LoginTest" id="s1-s1" pass="0" fail="1" skip="0">Suites.LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-08-01T14:09:32.380852" level="ERROR">Error in file 'C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\Resources\LoginKeywords.robot' on line 3: Variable file '..\PageObjects\Locators.py' does not exist.</msg>
+</errors>
+</robot>

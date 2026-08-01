@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.5 on win32)" generated="2026-08-01T14:04:19.783964" rpa="false" schemaversion="5">
+<suite id="s1" name="HeadlessTesting" source="C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\TestCases\HeadlessTesting.robot">
+<test id="s1-t1" name="LoginTest" line="13">
+<kw name="Open My Browser" owner="LoginKeywords">
+<kw name="Open Browser">
+<msg time="2026-08-01T14:04:19.839983" level="FAIL">No keyword with name 'Open Browser' found. Did you mean:
+    LoginKeywords.Open My Browser</msg>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<status status="FAIL" start="2026-08-01T14:04:19.839940" elapsed="0.000098">No keyword with name 'Open Browser' found. Did you mean:
+    LoginKeywords.Open My Browser</status>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" start="2026-08-01T14:04:19.840190" elapsed="0.000019"/>
+</kw>
+<kw name="Set Selenium Speed">
+<arg>0.3s</arg>
+<status status="NOT RUN" start="2026-08-01T14:04:19.840285" elapsed="0.000015"/>
+</kw>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<status status="FAIL" start="2026-08-01T14:04:19.838872" elapsed="0.001534">No keyword with name 'Open Browser' found. Did you mean:
+    LoginKeywords.Open My Browser</status>
+</kw>
+<kw name="Close my browsers">
+<status status="NOT RUN" start="2026-08-01T14:04:19.840668" elapsed="0.000017"/>
+</kw>
+<status status="FAIL" start="2026-08-01T14:04:19.838105" elapsed="0.002819">No keyword with name 'Open Browser' found. Did you mean:
+    LoginKeywords.Open My Browser</status>
+</test>
+<status status="FAIL" start="2026-08-01T14:04:19.786263" elapsed="0.055843"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="HeadlessTesting" id="s1" pass="0" fail="1" skip="0">HeadlessTesting</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-08-01T14:04:19.831819" level="ERROR">Error in file 'C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\TestCases\HeadlessTesting.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\.venv\Scripts\robot.exe
+  C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\.venv\Scripts\python313.zip
+  C:\Users\hi\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\hi\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\hi\AppData\Local\Programs\Python\Python313
+  C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\.venv
+  C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\.venv\Lib\site-packages</msg>
+<msg time="2026-08-01T14:04:19.836235" level="ERROR">Error in file 'C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\Resources\LoginKeywords.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\.venv\Scripts\robot.exe
+  C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\.venv\Scripts\python313.zip
+  C:\Users\hi\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\hi\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\hi\AppData\Local\Programs\Python\Python313
+  C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\.venv
+  C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\.venv\Lib\site-packages</msg>
+<msg time="2026-08-01T14:04:19.837140" level="ERROR">Error in file 'C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\Resources\LoginKeywords.robot' on line 3: Variable file '..\PageObjects\Locators.py' does not exist.</msg>
+</errors>
+</robot>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.5 on win32)" generated="2026-08-01T14:08:36.558238" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="HeadlessTesting" source="C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\TestCases\HeadlessTesting.robot">
+<test id="s1-s1-t1" name="LoginTest" line="13">
+<kw name="Open My Browser" owner="LoginKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-08-01T14:08:37.175323" level="INFO">Opening browser 'headlessfirefox' to base url 'https://www.spartoo.eu/'.</msg>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-08-01T14:08:37.175065" elapsed="34.226736"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-08-01T14:09:11.402375" elapsed="0.018721"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-08-01T14:09:11.421633" elapsed="0.001516"/>
+</kw>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2026-08-01T14:08:37.174204" elapsed="34.249611"/>
+</kw>
+<kw name="Close my browsers">
+<msg time="2026-08-01T14:09:11.427809" level="FAIL">No keyword with name 'Close my browsers' found. Did you mean:
+    LoginKeywords.Close My Browser
+    SeleniumLibrary.Close Browser</msg>
+<status status="FAIL" start="2026-08-01T14:09:11.427691" elapsed="0.000215">No keyword with name 'Close my browsers' found. Did you mean:
+    LoginKeywords.Close My Browser
+    SeleniumLibrary.Close Browser</status>
+</kw>
+<status status="FAIL" start="2026-08-01T14:08:37.173472" elapsed="34.254711">No keyword with name 'Close my browsers' found. Did you mean:
+    LoginKeywords.Close My Browser
+    SeleniumLibrary.Close Browser</status>
+</test>
+<status status="FAIL" start="2026-08-01T14:08:36.632913" elapsed="34.796259"/>
+</suite>
+<status status="FAIL" start="2026-08-01T14:08:36.560789" elapsed="34.869734"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="1" skip="0">Suites</stat>
+<stat name="HeadlessTesting" id="s1-s1" pass="0" fail="1" skip="0">Suites.HeadlessTesting</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-08-01T14:08:37.172903" level="ERROR">Error in file 'C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\Resources\LoginKeywords.robot' on line 3: Variable file '..\PageObjects\Locators.py' does not exist.</msg>
+</errors>
+</robot>

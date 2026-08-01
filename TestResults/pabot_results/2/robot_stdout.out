@@ -1,0 +1,21 @@
+==============================================================================
+Suites
+==============================================================================
+Suites.HomePageTest
+==============================================================================
+Scenario 1 - Verify Home Page                                         | FAIL |
+Variable '${txt_SearchPlaceholder}' not found.
+------------------------------------------------------------------------------
+Scenario 2 - Search Shoes                                             | FAIL |
+Variable '${txt_Search}' not found.
+------------------------------------------------------------------------------
+Scenario 3 - Navigate To Login Page                                   | FAIL |
+Variable '${btn_MyAccount}' not found.
+------------------------------------------------------------------------------
+Suites.HomePageTest                                                   | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Suites                                                                | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Output:  C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\TestResults\pabot_results\2\output.xml

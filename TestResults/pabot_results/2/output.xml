@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.5 on win32)" generated="2026-08-01T14:08:40.188466" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="HomePageTest" source="C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\TestCases\HomePageTest.robot">
+<test id="s1-s1-t1" name="Scenario 1 - Verify Home Page" line="10">
+<kw name="Open My Browser" owner="HomePageKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-08-01T14:08:40.684016" level="INFO">Opening browser 'Chrome' to base url 'https://www.spartoo.eu/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-08-01T14:08:40.683607" elapsed="11.760051"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-08-01T14:08:52.444626" elapsed="0.058151"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2026-08-01T14:08:40.682361" elapsed="11.820754"/>
+</kw>
+<kw name="Verify Home Page" owner="HomePageKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-08-01T14:08:52.505324" level="FAIL">Variable '${txt_SearchPlaceholder}' not found.</msg>
+<arg>${txt_SearchPlaceholder}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-08-01T14:08:52.504067" elapsed="0.001396">Variable '${txt_SearchPlaceholder}' not found.</status>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${txt_SearchPlaceholder}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-08-01T14:08:52.505804" elapsed="0.000111"/>
+</kw>
+<status status="FAIL" start="2026-08-01T14:08:52.503504" elapsed="0.002755">Variable '${txt_SearchPlaceholder}' not found.</status>
+</kw>
+<kw name="Close My Browser" owner="HomePageKeywords">
+<status status="NOT RUN" start="2026-08-01T14:08:52.506631" elapsed="0.000087"/>
+</kw>
+<status status="FAIL" start="2026-08-01T14:08:40.681472" elapsed="11.825690">Variable '${txt_SearchPlaceholder}' not found.</status>
+</test>
+<test id="s1-s1-t2" name="Scenario 2 - Search Shoes" line="19">
+<kw name="Open My Browser" owner="HomePageKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-08-01T14:08:52.521193" level="INFO">Opening browser 'Chrome' to base url 'https://www.spartoo.eu/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-08-01T14:08:52.514947" elapsed="5.527013"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-08-01T14:08:58.042409" elapsed="1.040655"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2026-08-01T14:08:52.513204" elapsed="6.570076"/>
+</kw>
+<kw name="Search Product" owner="HomePageKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-08-01T14:08:59.085597" level="FAIL">Variable '${txt_Search}' not found.</msg>
+<arg>${txt_Search}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-08-01T14:08:59.084292" elapsed="0.001459">Variable '${txt_Search}' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${txt_Search}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-08-01T14:08:59.086095" elapsed="0.000092"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${txt_Search}</arg>
+<arg>${Product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-08-01T14:08:59.086445" elapsed="0.000066"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<arg>${txt_Search}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" start="2026-08-01T14:08:59.086778" elapsed="0.000062"/>
+</kw>
+<arg>Nike Shoes</arg>
+<status status="FAIL" start="2026-08-01T14:08:59.083674" elapsed="0.003423">Variable '${txt_Search}' not found.</status>
+</kw>
+<kw name="Close My Browser" owner="HomePageKeywords">
+<status status="NOT RUN" start="2026-08-01T14:08:59.102163" elapsed="0.000135"/>
+</kw>
+<status status="FAIL" start="2026-08-01T14:08:52.511544" elapsed="6.591150">Variable '${txt_Search}' not found.</status>
+</test>
+<test id="s1-s1-t3" name="Scenario 3 - Navigate To Login Page" line="28">
+<kw name="Open My Browser" owner="HomePageKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-08-01T14:08:59.107192" level="INFO">Opening browser 'Chrome' to base url 'https://www.spartoo.eu/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-08-01T14:08:59.106810" elapsed="6.945277"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-08-01T14:09:06.052618" elapsed="0.375415"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2026-08-01T14:08:59.106183" elapsed="7.322033"/>
+</kw>
+<kw name="Open My Account" owner="HomePageKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-08-01T14:09:06.430581" level="FAIL">Variable '${btn_MyAccount}' not found.</msg>
+<arg>${btn_MyAccount}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-08-01T14:09:06.429436" elapsed="0.001251">Variable '${btn_MyAccount}' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${btn_MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-08-01T14:09:06.431348" elapsed="0.000078"/>
+</kw>
+<status status="FAIL" start="2026-08-01T14:09:06.428763" elapsed="0.003143">Variable '${btn_MyAccount}' not found.</status>
+</kw>
+<kw name="Close My Browser" owner="HomePageKeywords">
+<status status="NOT RUN" start="2026-08-01T14:09:06.432781" elapsed="0.000220"/>
+</kw>
+<status status="FAIL" start="2026-08-01T14:08:59.103410" elapsed="7.330083">Variable '${btn_MyAccount}' not found.</status>
+</test>
+<status status="FAIL" start="2026-08-01T14:08:40.252708" elapsed="26.182071"/>
+</suite>
+<status status="FAIL" start="2026-08-01T14:08:40.191039" elapsed="26.245488"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="3" skip="0">Suites</stat>
+<stat name="HomePageTest" id="s1-s1" pass="0" fail="3" skip="0">Suites.HomePageTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-08-01T14:08:40.680642" level="ERROR">Error in file 'C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\Resources\HomePageKeywords.robot' on line 3: Variable file '..\PageObjects\HomePageLocators.py' does not exist.</msg>
+</errors>
+</robot>

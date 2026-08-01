@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.5 on win32)" generated="2026-08-01T14:08:36.531629" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="DBTesting" source="C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\TestCases\DBTesting.robot">
+<kw name="Connect To Database" owner="DatabaseLibrary" type="SETUP">
+<msg time="2026-08-01T14:08:36.786873" level="INFO">Looking for configuration file: 'resources\db.cfg'</msg>
+<msg time="2026-08-01T14:08:36.787014" level="INFO">Configuration file doesn't exist</msg>
+<msg time="2026-08-01T14:08:36.984425" level="INFO">Connect to DB using : pymysql.connect(db='mydb', user=***, passwd=***, host='127.0.0.1', port=3306, charset='utf8mb4')</msg>
+<msg time="2026-08-01T14:08:39.232412" level="FAIL">OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")</msg>
+<arg>pymysql</arg>
+<arg>${DBName}</arg>
+<arg>${DBUser}</arg>
+<arg>${DBPass}</arg>
+<arg>${DBHost}</arg>
+<arg>${DBPort}</arg>
+<doc>Creates a database connection using the DB API 2.0 ``db_module`` and the parameters provided.
+Along with listed commonly used arguments (`db_name`, `db_host` etc.)
+you can set any other DB module specific parameters as key/value pairs.</doc>
+<status status="FAIL" start="2026-08-01T14:08:36.786043" elapsed="2.449640">OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")</status>
+</kw>
+<test id="s1-s1-t1" name="Check David record present in Person Table" line="33">
+<status status="FAIL" start="2026-08-01T14:08:39.235864" elapsed="0.000378">Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")</status>
+</test>
+<test id="s1-s1-t2" name="Check Jio record Not present in Person Table" line="36">
+<status status="FAIL" start="2026-08-01T14:08:39.236648" elapsed="0.000524">Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")</status>
+</test>
+<test id="s1-s1-t3" name="Check Person Table exists in mydb database" line="39">
+<status status="FAIL" start="2026-08-01T14:08:39.237456" elapsed="0.000254">Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")</status>
+</test>
+<test id="s1-s1-t4" name="Verify Row Count is Zero" line="42">
+<status status="FAIL" start="2026-08-01T14:08:39.237901" elapsed="0.000213">Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")</status>
+</test>
+<test id="s1-s1-t5" name="Verify Row Count is Equal to Some Value" line="45">
+<status status="FAIL" start="2026-08-01T14:08:39.238305" elapsed="0.000212">Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")</status>
+</test>
+<test id="s1-s1-t6" name="Verify Row Count is Greater than Some Value" line="48">
+<status status="FAIL" start="2026-08-01T14:08:39.238685" elapsed="0.000206">Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")</status>
+</test>
+<test id="s1-s1-t7" name="Verify Row Count is less than Some Value" line="51">
+<status status="FAIL" start="2026-08-01T14:08:39.239050" elapsed="0.000204">Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")</status>
+</test>
+<test id="s1-s1-t8" name="Update record in person table" line="54">
+<status status="FAIL" start="2026-08-01T14:08:39.239416" elapsed="0.000200">Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")</status>
+</test>
+<test id="s1-s1-t9" name="Retrieve Records from Person Table" line="59">
+<status status="FAIL" start="2026-08-01T14:08:39.239780" elapsed="0.000412">Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")</status>
+</test>
+<test id="s1-s1-t10" name="Delete Records from person table" line="63">
+<status status="FAIL" start="2026-08-01T14:08:39.240489" elapsed="0.000430">Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")</status>
+</test>
+<kw name="Disconnect From Database" owner="DatabaseLibrary" type="TEARDOWN">
+<msg time="2026-08-01T14:08:39.241892" level="INFO">No open database connection to close</msg>
+<doc>Disconnects from the database.</doc>
+<status status="PASS" start="2026-08-01T14:08:39.241674" elapsed="0.000286"/>
+</kw>
+<status status="FAIL" start="2026-08-01T14:08:36.590316" elapsed="2.651702">Suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")</status>
+</suite>
+<status status="FAIL" start="2026-08-01T14:08:36.534084" elapsed="2.708807"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="10" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="10" skip="0">Suites</stat>
+<stat name="DBTesting" id="s1-s1" pass="0" fail="10" skip="0">Suites.DBTesting</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

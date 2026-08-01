@@ -1,0 +1,55 @@
+==============================================================================
+Suites
+==============================================================================
+Suites.DBTesting
+==============================================================================
+Check David record present in Person Table                            | FAIL |
+Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+------------------------------------------------------------------------------
+Check Jio record Not present in Person Table                          | FAIL |
+Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+------------------------------------------------------------------------------
+Check Person Table exists in mydb database                            | FAIL |
+Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+------------------------------------------------------------------------------
+Verify Row Count is Zero                                              | FAIL |
+Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+------------------------------------------------------------------------------
+Verify Row Count is Equal to Some Value                               | FAIL |
+Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+------------------------------------------------------------------------------
+Verify Row Count is Greater than Some Value                           | FAIL |
+Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+------------------------------------------------------------------------------
+Verify Row Count is less than Some Value                              | FAIL |
+Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+------------------------------------------------------------------------------
+Update record in person table                                         | FAIL |
+Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+------------------------------------------------------------------------------
+Retrieve Records from Person Table                                    | FAIL |
+Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+------------------------------------------------------------------------------
+Delete Records from person table                                      | FAIL |
+Parent suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+------------------------------------------------------------------------------
+Suites.DBTesting                                                      | FAIL |
+Suite setup failed:
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+
+10 tests, 0 passed, 10 failed
+==============================================================================
+Suites                                                                | FAIL |
+10 tests, 0 passed, 10 failed
+==============================================================================
+Output:  C:\Users\hi\PycharmProjects\RobotAutomationFramework(POM)\TestResults\pabot_results\0\output.xml
